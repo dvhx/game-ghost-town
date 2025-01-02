@@ -1,0 +1,417 @@
+- allow non-string param values, e.g. "$age;": 123
+- allow missing params object
+
+2019-09-28
+- added support for multiword params in questions, e.g. "John Smith"
+- addQuestionAnswer will now merge tags if answer is array
+- added globalCharacterScore
+- prefer dumb[] from last character if exists
+- added GHOST.localSlang support
+
+2018-11-07
+- added GHOST.changeParam to rename characters
+
+2018-07-14
+- added GHOST.multichar()
+
+2018-06-29
+- allow stemmer to use non-string parameters (e.g. boolean)
+
+2018-06-18
+- improved apostrophe handling
+- added 119 new character data (total 7452)
+- increased dot frequency 3x, comma 2x
+
+2018-05-25
+- added <> to tokenizer
+
+2017-12-16
+- moved "why" algo here from ghost app, added multiple character support
+
+2017-12-11
+- added 20 new sentences (total 7333)
+
+2017-12-05
+- supports × in math tokenizer
+- fixed typos
+
+2017-12-02
+- added 156 new sentences (total 7313)
+
+2017-12-01
+- upgraded to Android Studio 3.0.1
+- added ’ to tokenizer
+
+2017-07-25
+- added 2 new sentences (total 7157)
+- added Node.js support
+
+2017-07-24
+- added 19 new sentences (total 7155)
+- fixed typo
+
+2017-07-18
+- added 11 new sentences (total 7136)
+
+2017-07-17
+- fixed typo (super vs. supper)
+
+2017-07-13
+- added 22 new sentences (total 7125)
+
+2017-06-16
+- added 78 new sentences (total 7103)
+
+2017-04-24
+- added 58 new sentences (total 7025)
+
+2017-04-09
+- use spaces around slang to fix "i made" being converted to "i'm ade"
+- fixed "me 2" issue
+
+2017-04-07
+- minor data cleanups
+
+2017-03-25
+- move one QA from GA to android character
+- fixed minor typos
+
+2017-03-23
+- slang and shortcuts moved out of characters
+- maxWordLength moved from stemmer/normalize to GHOST
+- addQuestionAnswer now uses slang, add same answer only once and no longer
+  accepts array of answers only single answer and no replacing previous answers
+
+2017-03-22
+- added 64 new sentences (total 6967)
+
+2017-03-19
+- moved question mark detection from app here
+
+2017-03-14
+- added 134 new sentences (total 6903)
+
+2017-03-05
+- changed /commands to #commands
+
+2017-02-13
+- added 113 new sentences (total 6769)
+- minor data cleanups
+
+2017-02-04
+- fixed age
+
+2017-01-12
+- added 150 new sentences (total 6656)
+
+2016-12-03
+- moved 4 questions from basic to ga character
+
+2016-12-02
+- added 71 new sentences (total 6506)
+- fixed few typos
+- minor math improvements
+
+2016-11-30
+- added unique id to character to allow having 2 different characters with same nick
+
+2016-11-29
+- added 247 new sentences (total 6435)
+- fixed few typos
+
+2016-11-15
+- fixed semicolon in 1 answer
+- added 120 new sentences (total 6187)
+- minor data cleanup
+
+2016-11-09
+- added 140 new sentences (total 6067)
+- minor data cleanups
+
+2016-11-05
+- minor data cleanups
+
+2016-10-29
+- added new sentences (total 5927)
+
+2016-10-26
+- cleaned up slang
+- added new sentences (total 5886)
+
+2016-10-22
+- cleanup
+
+2016-10-12
+- added new sentences (total 5664)
+
+2016-10-07
+- added and cleaned up new sentences (total 5670)
+
+2016-10-04
+- added third parameter to globalTermFrequency so that it can return e.g. 0 for non-words or 1 if we use 1/tf
+
+2016-09-26
+- added many missing questionmarks to data
+- changed globalTermFrequency for questionmark from 4 to 1
+
+2016-08-31
+- added 76 new sentences (total 5736)
+- added height parameter
+- fixed ñ in stemmer
+- minor data cleanups
+- added more slang
+
+2016-07-15
+- fixed 4 typos in data
+- added more slang
+- added 197 new sentences (total 5660)
+
+2016-05-31
+- added 154 new sentences (total 5463)
+
+2016-05-14
+- fixed typo in data
+
+2016-05-10
+- added 157 new sentences (total 5309)
+- added more slang
+- prefer answers from later character (mergeless regression)
+
+2016-05-03
+- converted that's and what's to "that is" and "what is" in character data
+
+2016-04-25
+- moved "hard drive" sleep from basic to GA character
+
+2016-04-24
+- massive cleanup, most data moved from ghost to basic and app's personality to "ga" character
+- added option to account for characters order
+
+2016-04-19
+- less cussing
+
+2016-04-16
+- added 84 new sentences (total 5152)
+- fixed shortcuts replacing for multiple shortcuts in one sentence
+- fixed reindex when index attribute is completely missing from character
+
+2016-04-14
+- fixed 1 typo (seems)
+
+2016-04-09
+- added 74 new sentences (total 5068)
+- support for weird apostrophe
+
+2016-04-04
+- added 27 new sentences (total 4994)
+
+2016-04-02
+- added 96 new sentences (total 4967)
+- removing leading and trailing \ in normalizer (very common typo on chromebook keyboards)
+
+2016-03-26
+- mergeless version of ghost
+- minor improvements in scoring
+- fixed sentenceDifference2 (now really returns 0-1)
+- removed export function
+- minor data cleanups
+- added 6 new sentences (total 4871)
+
+2016-03-16
+- added 59 new sentences (total 4865)
+
+2016-02-15
+- added 65 new sentences (total 4806)
+- minor data cleanups
+
+2016-02-13
+- added 92 new sentences (total 4741)
+- minor data cleanups
+
+2016-02-06
+- added 105 new sentences (total 4649)
+
+2016-01-26
+- added 10 new sentences (total 4544)
+
+2016-01-23
+- added option to replace answer instead of adding
+- merge now support characters without params
+- added 132 new sentences (total 4534)
+
+2016-01-20
+- added 31 new sentences (total 4402)
+
+2016-01-19
+- added 190 new sentences (total 4371)
+
+2016-01-13
+- added 101 new sentences (total 4181)
+
+2016-01-12
+- added 42 new sentences (total 4080)
+- minor code cleanup
+
+2015-12-28
+- added 52 new sentences (total 4038)
+
+2015-12-23
+- added 80 new sentences (total 3986)
+
+2015-12-21
+- added 53 new sentences (total 3906)
+
+2015-12-20
+- major corpus cleaning, mostly typos
+- removed 8 sentences (total 3853)
+
+2015-12-17
+- added 26 new sentences (total 3861)
+- removing trailing' apostrophe in stemmer
+
+2015-12-16
+- added 39 new sentences (total 3835)
+
+2015-12-15
+- fixed tags without semicolons
+- added 103 new sentences (total 3796)
+- added ~ = : as word separators
+- added removing of enclosing asterisk, e.g. *blushing*
+- added removing of trailing ellipsis
+- added removing of multiple ? and !
+- better shortcuts support (U.S.A., A.I.)
+
+2015-12-12
+- modified tokenizer for better math support
+- merged tag user.eye into user.eyes
+- minor data cleanups
+
+2015-12-11
+- added 117 new sentences (total 3693)
+- minor data cleanups
+
+2015-12-10
+- added 176 new sentences (total 3576)
+
+2015-12-09
+- added 210 new sentences (total 3400)
+
+2015-12-06
+- added $day; and $month; parameters
+- added 4 new sentences (total 3190)
+
+2015-12-05
+- normalize remove quotes if they fully enclose question
+- added 50 new sentences (total 3186)
+- use question if it is exact match with data
+
+2015-12-03
+- added 57 new sentences (total 3136)
+
+2015-12-02
+- added 171 new sentences (total 3079)
+- changed default balance coefficient (from 1 to 3)
+
+2015-12-01
+- added ability to show picture of ghost itself (param $picture;)
+- added 109 new sentences (total 2908)
+
+2015-11-30
+- added 143 new sentences (total 2799)
+
+2015-11-27
+- added slang support and data
+- removed slang words from basic and ghost characters
+- removed 138 sentences (total 2656)
+
+2015-11-25
+- added tags: yes, no, user.hair, user.eyes, user.location, user.nick, user.sex, user.age, rename
+- minor data cleanups
+- added 23 new sentences (total 2795)
+
+2015-11-13
+- added tags (array of strings added in answers and used to
+  categorize questions, e.g. yes/no questions, etc...)
+- GHOST.ask and GHOST.askChain now returns object, e.g.:
+  {
+    question: "not really",
+    answer: "Why not?",
+    tags: [ "no" ]
+  }
+- fixed stage value in demo
+- added default chain values
+
+2015-11-12
+- added 152 new sentences (total 2772)
+- added @ as separator to tokenizer
+
+2015-11-10
+- added 81 new sentences (total 2620)
+
+2015-11-08
+- removed 1 duplicate (total 2539)
+- added simple demo
+
+2015-11-06
+- added 93 new sentences (total 2539)
+
+2015-11-04
+- added 132 new sentences (total 2446)
+
+2015-10-29
+- added 44 new sentences (total 2314)
+
+2015-10-26
+- added 33 new sentences (total 2270)
+
+2015-10-23
+- added 225 new sentences (total 2237)
+- improved tokenizer
+
+2015-10-21
+- added 44 new sentences (total 2012)
+- fixed issue with input params
+
+2015-10-20
+- added 84 new sentences (total 2068)
+
+2015-10-19
+- added 122 new sentences (total 1984)
+
+2015-10-16
+- added 119 new sentences (total 1862)
+
+2015-10-14
+- added 38 new sentences (total 1743)
+- removed $question; parameter
+
+2015-10-12
+- added 64 new sentences (total 1705)
+- stemmer length increased to 15
+
+2015-10-06
+- added 129 new sentences (total 1641)
+
+2015-10-03
+- fixed typo
+
+2015-09-30
+- added 17 new sentences (total 1512)
+- fixed date, time and year parameters
+
+2015-09-29
+- dumb changed to array (creating, merging)
+
+2015-09-25
+- added some 50 new questions (total 1495)
+
+2015-09-10
+- added 18 new questions
+- fixed quotes
+
+2015-09-08
+- few sentences moved from basic to ghost character
+- added dumb functionality
+
+2015-08-18
+- first release of JS version

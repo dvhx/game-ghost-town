@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>Ghosttown</title>
+    <link rel="stylesheet" href="css/splash.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="shortcut icon" href="image/icon/16.png" type="image/png" />
+    <link rel="stylesheet" href="css/newspaper.css" type="text/css" />
+  </head>
+  <body>
+    <canvas id="canvas1" class="fullcanvas"></canvas>
+    <canvas id="canvas2" class="fullcanvas"></canvas>
+    <canvas id="canvas_bubbles" class="fullcanvas"></canvas>
+    <div id="touch"></div>
+    <form action="">
+        <input id="cmd" autocomplete="off" />
+    </form>
+
+    <div id="toolbar">
+        <button id="tool_quests" title="List of quests"><div id="hint_quest">New quest available</div></button>
+        <button id="tool_inventory" title="Show inventory"></button>
+        <button id="tool_pick" title="Pick item from ground"></button>
+        <button id="tool_repeat" title="Repeat last command"></button>
+        <button id="tool_intro" title="Show intro"></button>
+    </div>
+
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="js/assert.js"></script>
+    <script type="text/javascript" src="js/android.js"></script>
+    <script type="text/javascript" src="js/date.js"></script>
+    <script type="text/javascript" src="js/export.js"></script>
+    <script type="text/javascript" src="js/alert.js"></script>
+    <script type="text/javascript" src="js/confirm.js"></script>
+    <script type="text/javascript" src="js/type.js"></script>
+    <script type="text/javascript" src="js/storage.js"></script>
+    <script type="text/javascript" src="js/splash.js"></script>
+    <script type="text/javascript" src="js/quests.js"></script>
+    <script type="text/javascript" src="js/sha1.js"></script>
+
+    <script type="text/javascript" src="js/keyboard.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/goods.js"></script>
+    <script type="text/javascript" src="js/tileset.js"></script>
+    <script type="text/javascript" src="map/tileset/tiny16.js"></script>
+    <script type="text/javascript" src="map/tileset/ghosttown.js"></script>
+    <script type="text/javascript" src="js/cmd.js"></script>
+    <script type="text/javascript" src="js/commands.js"></script>
+    <script type="text/javascript" src="js/quest.js"></script>
+    <script type="text/javascript" src="js/wallet.js"></script>
+    <script type="text/javascript" src="js/caption.js"></script>
+
+    <script type="text/javascript" src="map/ghosttown.js"></script>
+    <script type="text/javascript" src="map/gallery2.js"></script>
+    <script type="text/javascript" src="map/gallery3.js"></script>
+    <script type="text/javascript" src="map/jail2.js"></script>
+    <script type="text/javascript" src="map/tomb.js"></script>
+    <script type="text/javascript" src="map/quarry.js"></script>
+    <script type="text/javascript" src="map/basement_ken.js"></script>
+    <script type="text/javascript" src="map/basement_town_hall.js"></script>
+    <script type="text/javascript" src="map/library.js"></script>
+
+    <script type="text/javascript" src="map/npcs.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+
+    <script type="text/javascript" src="ghost/ghost.js"></script>
+    <script type="text/javascript" src="ghost/why.js"></script>
+    <script type="text/javascript" src="ghost/character/slang.js"></script>
+    <script type="text/javascript" src="ghost/character/basic.js"></script>
+    <script type="text/javascript" src="ghost/character/ghost.js"></script>
+    <script type="text/javascript" src="ghost/character/relationship.js"></script>
+
+    <script type="text/javascript" src="character/core.js"></script>
+    <script type="text/javascript" src="character/mute.js"></script>
+    <script type="text/javascript" src="character/villager.js"></script>
+    <script type="text/javascript" src="character/banker.js"></script>
+    <script type="text/javascript" src="character/curator.js"></script>
+    <script type="text/javascript" src="character/fisherman.js"></script>
+    <script type="text/javascript" src="character/fisherman_before.js"></script>
+    <script type="text/javascript" src="character/jane.js"></script>
+    <script type="text/javascript" src="character/jane_lost.js"></script>
+    <script type="text/javascript" src="character/jane_found.js"></script>
+    <script type="text/javascript" src="character/john.js"></script>
+    <script type="text/javascript" src="character/ken.js"></script>
+    <script type="text/javascript" src="character/ken_sick.js"></script>
+    <script type="text/javascript" src="character/ken_cured.js"></script>
+    <script type="text/javascript" src="character/kim.js"></script>
+    <script type="text/javascript" src="character/kim_sick.js"></script>
+    <script type="text/javascript" src="character/kim_cured.js"></script>
+    <script type="text/javascript" src="character/mayor.js"></script>
+    <script type="text/javascript" src="character/mayor_locked.js"></script>
+    <script type="text/javascript" src="character/shopkeeper.js"></script>
+    <script type="text/javascript" src="character/surveyor.js"></script>
+    <script type="text/javascript" src="character/surveyor_rocks.js"></script>
+    <script type="text/javascript" src="character/surveyor_crystals.js"></script>
+    <script type="text/javascript" src="character/firefighter.js"></script>
+    <script type="text/javascript" src="character/firefighter_stolen.js"></script>
+    <script type="text/javascript" src="character/firefighter_found.js"></script>
+    <script type="text/javascript" src="character/prisoner.js"></script>
+    <script type="text/javascript" src="character/prisoner_casual.js"></script>
+    <script type="text/javascript" src="character/bug.js"></script>
+    <script type="text/javascript" src="character/founder_ghost.js"></script>
+    <script type="text/javascript" src="character/founder_ghost_casual.js"></script>
+    <script type="text/javascript" src="character/founder_skeleton.js"></script>
+    <script type="text/javascript" src="character/founder_skeleton_casual.js"></script>
+    <script type="text/javascript" src="character/craig.js"></script>
+    <script type="text/javascript" src="character/frog.js"></script>
+    <script type="text/javascript" src="character/frog_well.js"></script>
+    <script type="text/javascript" src="character/frog_saved.js"></script>
+    <script type="text/javascript" src="character/warden.js"></script>
+
+    <!-- script type="text/javascript" src="cache/character.js"></script -->
+
+    <script type="text/javascript" src="js/action_button.js"></script>
+    <script type="text/javascript" src="js/blink.js"></script>
+    <script type="text/javascript" src="js/npc.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/bubble.js"></script>
+    <script type="text/javascript" src="js/touch.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
+    <script type="text/javascript" src="js/newspaper.js"></script>
+    <script type="text/javascript" src="js/article.js"></script>
+    <script type="text/javascript" src="js/inventory.js"></script>
+    <script type="text/javascript" src="js/intro.js"></script>
+    <script type="text/javascript" src="js/shop.js"></script>
+    <script type="text/javascript" src="js/release.js"></script>
+    <script type="text/javascript" src="js/transaction.js"></script>
+    <script type="text/javascript" src="js/forum.js"></script>
+    <script type="text/javascript" src="js/toolbar.js"></script>
+
+    <script type="text/javascript" src="js/random_book.js"></script>
+    <script type="text/javascript" src="js/transmutation.js"></script>
+
+    <script type="text/javascript" src="js/eval.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,4 @@
+URL      : -
+Author   : Dusan Halicky (dusan.halicky@gmail.com)
+
+This is a small complementary tile set for tiny16 used in Ghosttown.

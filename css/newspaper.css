@@ -1,0 +1,164 @@
+/* CSS for history page that looks like old newspaper */
+
+.newspaper {
+    color: #1e0d0d;
+    background-color: #f6efe2;
+    margin: 1ex;
+    padding: 0;
+    font-family: serif;
+    font-size: medium;
+    z-index: 25;
+}
+
+@font-face {
+    font-family: KlaberFraktur;
+    src: url(../font/KlaberFraktur.ttf) format('truetype');
+}
+
+.newspaper h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: KlaberFraktur;
+    font-weight: normal;
+    font-size: 250%;
+}
+.newspaper h1.nosub {
+    border-bottom: 3px solid black;
+}
+.newspaper h2 {
+    font-size: small;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.newspaper nav {
+    text-align: center;
+    border-top: 3px solid black;
+    border-bottom: 1px dotted black;
+    margin: 0;
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+    padding: 1ex;
+    text-transform: uppercase;
+}
+
+.newspaper h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1ex;
+}
+
+.newspaper p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1ex;
+}
+
+.newspaper ul, .newspaper ol {
+    margin: 0;
+    padding: 0;
+    margin-left: 3ex;
+    margin-bottom: 1ex;
+    padding-bottom: 1ex;
+}
+
+.newspaper li {
+    margin-bottom: 2mm;
+}
+
+.newspaper .band {
+    /* border: 1px solid blue; */
+    border-bottom: 1px dotted black;
+}
+
+.newspaper .article {
+    margin: 0;
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+    /* border-bottom: 1px dotted black;
+    padding-bottom: 1ex; */
+}
+
+.newspaper .article .more {
+    text-decoration: underline;
+    float: right;
+    cursor: pointer;
+}
+
+.newspaper .article .date {
+    opacity: 0.5;
+    text-align: right;
+}
+
+.newspaper .article .comment {
+    display: block;
+    box-sizing: border-box;
+    min-height: 4em;
+    width: 100%;
+    resize: vertical;
+}
+
+.newspaper .article .submit {
+    min-height: 1cm;
+    margin-right: 1ex;
+    float: none;
+}
+
+.newspaper .article .button {
+    min-width: 1.5cm;
+    min-height: 1.5cm;
+}
+
+.newspaper .clear {
+    clear: both;
+}
+
+.newspaper hr {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1ex;
+    clear: both;
+    height: 1px;
+    border: 0;
+    border-top: 1px dotted black;
+}
+.newspaper hr.thick {
+    border-top: 3px solid black;
+}
+
+.newspaper .price {
+    font-weight: bold;
+    display: block;
+}
+
+.newspaper button {
+    float: right;
+    min-width: 3em;
+    min-height: 3em;
+    margin: 1px;
+}
+
+.closeButton {
+    position: absolute;
+    background-color: transparent;
+    border: 0 solid red;
+    right: 1ex;
+    min-width: 1cm;
+    min-height: 1cm;
+}
+
+.newspaper table {
+    border-collapse: collapse;
+}
+.newspaper tr:hover {
+    background-color: #e6dfd2;
+}
+
+.newspaper select {
+    display: block;
+    width: 100%;
+    min-height: 1cm;
+}
+

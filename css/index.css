@@ -1,0 +1,136 @@
+body {
+    background-color: #140c1c;
+    color: lime;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: medium;
+}
+.fullcanvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+#test {
+    position: fixed;
+    border: 0;
+    left: 4px;
+    top: 65px;
+    width: 40px;
+    height: 25px;
+    color: white;
+    background-color: red;
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+#cmd {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: none;
+    resize: none;
+    height: 0.7cm;
+}
+
+#touch {
+    position: fixed;
+    left: 0;
+    bottom: 0.7cm;
+    opacity: 0.7;
+    background-color: rgba(0,0,0,0.3);
+    padding: 1ex;
+    /* border-top-right-radius: 1ex; */
+    border-radius: 50%;
+    background-image: url(../image/icon/arrows.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+
+touch:-webkit-full-screen {
+    border: 10px solid red;
+    top: 3em;
+    /* bottom: initial; */
+}
+
+/* feedback buttons */
+
+.dh_feedback button {
+    min-height: 1.2cm;
+    min-width: 2cm;
+}
+
+/* toolbar */
+
+#toolbar {
+    position: fixed;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    border-bottom-left-radius: 1ex;
+    z-index: 20;
+}
+#toolbar button {
+    display: block;
+    min-width: 1.3cm;
+    min-height: 1.3cm;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#toolbar .glow {
+    background: url(../image/icon/glow.png);
+}
+#tool_quests {
+    background: url(../image/icon/quests.png);
+}
+#tool_inventory {
+    background: url(../image/icon/inventory.png);
+}
+#tool_pick {
+    background: url(../image/icon/pick.png);
+}
+#tool_repeat {
+    background: url(../image/icon/repeat.png);
+    display: none;
+}
+#tool_intro {
+    background: url(../image/icon/intro.png);
+}
+
+#hint_quest {
+    display: none;
+    position: absolute;
+    right: 1.7cm;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    line-height: 1cm;
+    height: 1cm;
+    color: white;
+    border-top-left-radius: 1ex;
+    border-bottom-left-radius: 1ex;
+    padding-left: 1ex;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+    white-space: nowrap;
+}
+#hint_quest:after {
+    content: " ";
+    border-style: solid;
+    border-width: 0.5cm;
+    position: absolute;
+    right: -1cm;
+    border-color: transparent transparent transparent rgba(0,0,0,0.5);
+}
+
+.splash {
+    z-index: 30;
+}
