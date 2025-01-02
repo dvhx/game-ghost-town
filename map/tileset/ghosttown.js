@@ -22,8 +22,6 @@ SC.tileset('map/tileset/ghosttown.png', [
     [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
 ]);
 
-echo('asdf');
-
 SC.goodsAdd('barrierup', 'Barrier', 'Wooden barrier', false, true, 1);
 SC.goodsAdd('painting', 'Painting', 'Nice oil painting', false, true, 1);
 SC.goodsAdd('tombstone', 'Tombstone', 'Gray standing tombstone', false, true, 1);
