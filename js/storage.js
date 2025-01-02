@@ -8,6 +8,7 @@ var SC = window.SC || {}
 SC.storage = (function () {
     var self = {};
     self.ops = 0;
+    self.prefix = '';
 
     function cb(aCallback, aValue) {
         // if callback is function call it with value
@@ -22,7 +23,7 @@ SC.storage = (function () {
             throw "SC.storage.keyExists key " + aKey + " is not string!";
         }
         try {
-            var r = localStorage.hasOwnProperty(aKey);
+            var r = localStorage.hasOwnProperty(self.prefix + aKey);
             cb(aCallback, r);
             return r;
         } catch (e) {
@@ -35,16 +36,16 @@ SC.storage = (function () {
         if (typeof aKey !== 'string') {
             throw "SC.storage.erase key " + aKey + " is not string!";
         }
-        localStorage.removeItem(aKey);
+        localStorage.removeItem(self.prefix + aKey);
     };
 
     self.size = function (aKey, aCallback) {
         // return size of a key's value in bytes
-        if (!localStorage.hasOwnProperty(aKey)) {
+        if (!localStorage.hasOwnProperty(self.prefix + aKey)) {
             cb(aCallback, 0);
             return 0;
         }
-        var r = localStorage.getItem(aKey).length;
+        var r = localStorage.getItem(self.prefix + aKey).length;
         cb(aCallback, r);
         return r;
     };
@@ -77,7 +78,7 @@ SC.storage = (function () {
             }
         }
         cb(aCallback, keys);
-        return keys;
+        return keys.substr(self.prefix.length);
     };
 
     self.eraseAll = function (aNothing) {
@@ -113,8 +114,8 @@ SC.storage = (function () {
         }
         self.ops++;
         try {
-            if (localStorage.hasOwnProperty(aKey)) {
-                r = localStorage.getItem(aKey);
+            if (localStorage.hasOwnProperty(self.prefix + aKey)) {
+                r = localStorage.getItem(self.prefix + aKey);
             } else {
                 r = aDefault;
             }
@@ -135,7 +136,7 @@ SC.storage = (function () {
         }
         self.ops++;
         try {
-            localStorage.setItem(aKey, aValue);
+            localStorage.setItem(self.prefix + aKey, aValue);
         } catch (e) {
             console.warn('SC.storage.writeString: ' + e);
         }
