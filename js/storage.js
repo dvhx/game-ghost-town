@@ -74,11 +74,11 @@ SC.storage = (function () {
         var k, keys = [];
         for (k in localStorage) {
             if (localStorage.hasOwnProperty(k)) {
-                keys.push(k);
+                keys.push(k.substr(self.prefix.length));
             }
         }
         cb(aCallback, keys);
-        return keys.substr(self.prefix.length);
+        return keys;
     };
 
     self.eraseAll = function (aNothing) {
@@ -95,9 +95,11 @@ SC.storage = (function () {
         for (i = 0; i < keys.length; i++) {
             c = self.size(keys[i]);
             t += c;
-            s.push(keys[i] + ': ' + c + ' B = ' + self.readString(keys[i], '').substr(0, 80) + '...');
+            s.push(self.prefix + keys[i] + ': ' + c + ' B = ' + self.readString(keys[i], '').substr(0, 80) + '...');
+            console.log(self.prefix + keys[i] + ': ' + c + ' B = ' + self.readString(keys[i], '').substr(0, 80) + '...');
         }
         s.push('Total size: ' + t + ' B (' + (t / 1000).toFixed(0) + ' kB)');
+        console.log('Total size: ' + t + ' B (' + (t / 1000).toFixed(0) + ' kB)');
         s = s.join('\n');
         cb(aCallback, s);
         return s;
