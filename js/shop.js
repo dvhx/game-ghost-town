@@ -2,7 +2,7 @@
 "use strict";
 // globals: document, window, setTimeout, setInterval, GHOST, Android, navigator
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.shopTable = function (aRows, aBuyCallback, aSellCallback) {
     // render one goods table

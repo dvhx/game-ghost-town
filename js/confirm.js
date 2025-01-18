@@ -3,7 +3,7 @@
 // require: none
 "use strict";
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.confirm = function (aMessage, aButtons, aCallback) {
     // Show messages at the top of window with buttons

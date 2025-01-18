@@ -2,7 +2,7 @@
 // require: none
 "use strict";
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.sha1 = function (aString) {
     // returns sha1 hash of aString

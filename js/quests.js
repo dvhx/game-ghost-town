@@ -3,7 +3,7 @@
 // globals: document, window
 // require: storage, splash
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.quests = (function () {
     // Quests and their status

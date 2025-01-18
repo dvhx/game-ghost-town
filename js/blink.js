@@ -2,7 +2,7 @@
 "use strict";
 // globals: document, window, setTimeout, setInterval
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.blink = (function () {
     var self = {}, buffer = [], element, show, fade, counter = 0;

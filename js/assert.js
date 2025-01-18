@@ -2,7 +2,7 @@
 // require: none
 "use strict";
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.assert = function (aTrue, aMessage) {
     // throw exception if aTrue is not true

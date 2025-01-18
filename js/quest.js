@@ -2,7 +2,7 @@
 "use strict";
 // globals: document, window, setTimeout, setInterval, GHOST, Android, navigator
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 SC.commands = SC.commands || {};
 
 SC.commands["#quest_rocks_start"] = {

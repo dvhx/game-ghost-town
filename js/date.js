@@ -2,7 +2,7 @@
 // require: none
 "use strict";
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.date = (function () {
     var self = {};

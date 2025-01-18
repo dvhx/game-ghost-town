@@ -2,7 +2,7 @@
 "use strict";
 // globals: 
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.commands['#eval'] = {};
 SC.commands['#eval'].summary = "Evaluate JavaScript expression, for debugging purposes only";

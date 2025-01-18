@@ -3,7 +3,7 @@
 // require: none
 // globals: localStorage, window
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.storage = (function () {
     var self = {};

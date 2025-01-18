@@ -2,7 +2,7 @@
 "use strict";
 // globals: document, window
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 window.addEventListener('DOMContentLoaded', function () {
     // disable touchpad

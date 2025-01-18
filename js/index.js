@@ -2,7 +2,7 @@
 "use strict";
 // globals: document, window, setTimeout, setInterval, GHOST
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.canvas1 = null;
 SC.context1 = null;

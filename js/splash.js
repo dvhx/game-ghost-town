@@ -3,7 +3,7 @@
 "use strict";
 // globals: document, window, setTimeout
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.splash = function (aTitle, aButtons, aColor, aShowCallback, aHideCallback, aWidth, aHeight) {
     // Nice popup window with custom content

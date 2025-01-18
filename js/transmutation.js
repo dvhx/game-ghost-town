@@ -2,7 +2,7 @@
 "use strict";
 // globals: window, console, document
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.transmutation = function (aCanvasOrId, aSpell) {
     var canvas = typeof aCanvasOrId === 'string' ? document.getElementById(aCanvasOrId) : aCanvasOrId,

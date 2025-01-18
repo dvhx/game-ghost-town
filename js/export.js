@@ -3,7 +3,7 @@
 // globals: Blob, document, URL, Android
 "use strict";
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.export = function (aData, aFilePrefix, aFileExtension, aCallback) {
     // export data to external file

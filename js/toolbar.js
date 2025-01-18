@@ -2,7 +2,7 @@
 "use strict";
 // globals: document, window, setTimeout, setInterval, GHOST, Android, navigator, clearTimeout
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.toolbar = (function () {
     var self = {}, repeat_command, hider;

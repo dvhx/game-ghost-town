@@ -2,7 +2,7 @@
 "use strict";
 // globals: document, window, setTimeout, setInterval, GHOST, Android, navigator, Image
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.tiles = {};
 

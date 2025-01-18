@@ -3,7 +3,7 @@
 // require: none
 "use strict";
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.dialogs = [];
 

@@ -2,7 +2,7 @@
 "use strict";
 // globals: document, window
 
-var SC = window.SC || {}
+var SC = window.SC || {};
 
 SC.twister = function (aSeed) {
     // simple pseudo random generator with string seed, e.g. "White magic"
