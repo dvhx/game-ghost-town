@@ -5,7 +5,7 @@
 
 ### My other games
 
-- [Alien invasion](https://github.com/dvhx/game-word-puzzle) - 2D bullet hell alien shooter, collect credits and upgrade your ship
+- [Alien invasion](https://github.com/dvhx/game-alien-invasion) - 2D bullet hell alien shooter, collect credits and upgrade your ship
 - [Balloon mountains](https://github.com/dvhx/game-balloon-mountains) - pop balloons while flying over misty mountains
 - [Beach volleyball](https://github.com/dvhx/game-beach-volleyball) - play beach volleyball against opponent using swipe up gesture (or mouse)
 - [Ghost car challenge](https://github.com/dvhx/game-ghost-car-challenge) - WebGL 3D game where you compete against "ghost drivers", uses tilt sensor on mobile phones (Android)
